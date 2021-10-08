@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CampingPlads.Images.MasterPage.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../Index.aspx">Campingplads</a>
+          <button class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../Index.aspx">Hjem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Campingpladsen.aspx">Om Campingpladsen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Priser.aspx">Priser</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pladser.aspx">Pladser</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+				<div class="fixed-bottom call">
+                    <a href="tel:+45 22810419"><button type="button" class="btn btn-success btn-lg btn-rounded">+45 22810419</button></a>
+				</div>
+    </form>
+</body>
+</html>

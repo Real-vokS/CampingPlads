@@ -1,0 +1,36 @@
+﻿
+.crop-head {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.center-text {
+    text-align:center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 60%
+}
+
+.info-text{
+    font-size:22px;
+}
+
+.call{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.btn-pos {
+    position: absolute !important;
+    margin-top: -350px;
+    margin-left: 170px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.card{
+    background-color:transparent !important;
+    border:none !important;
+}
