@@ -67,9 +67,4 @@
 				</div>
 			</div>
 		</div>
-
-        <div>
-
-			<p></p>
-        </div>
 </asp:Content>

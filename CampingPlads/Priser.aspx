@@ -2,38 +2,23 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-	<link href="./Style/Style.css" rel="stylesheet">
+    <link href="./Style/Style.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB Script -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
 
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-		<!-- Style added in html to make it work in chrome -->
-		<!-- Header -->
-		<div class="crop-head">
-		    <img class="header-img" src="./Images/header-img.jpg" style="margin-top: -400px; margin-left: -80px;" />
-		</div>
-
-		
-
-		<div class="container">
-			<div class="row">
-				<div class="col crop">
-                <img src="./Images/Pladser.jpg" class="shadow p-3 mb-5 bg-body rounded" style="margin-top: 11px; margin-left: -100px;" />
-				</div>
-				<div class="col order-5 crop">
-                <img src="./Images/Hytter.jpg" class="shadow p-3 mb-5 bg-body rounded" style="margin-top: -59px; margin-left: -100px;" />
-				</div>
-				<div class="col order-1 crop">
-                <img src="./Images/Campingplads.jpg" class="shadow p-3 mb-5 bg-body rounded" style="margin-top: -240px; margin-left: -100px;" />
-				</div>
-			</div>
-		</div>
-
-        <div>
-
-			<p>pog</p>
-        </div>
+    <div class="d-flex justify-content-center">
+            <img src="../Images/Priser.PNG" alt="Priser" style="margin-top: 50px; float: none; text-align: center;" />
+    </div>
 </asp:Content>
