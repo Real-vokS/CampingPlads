@@ -45,130 +45,130 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+        <!-- Call Button -->
         <div class="fixed-bottom call">
-            <a href="tel:+45 22810419"><button type="button" class="btn btn-success btn-lg btn-rounded">+45 22810419</button></a>
+            <a href="tel:+45 22810419">
+                <button type="button" class="btn btn-success btn-lg btn-rounded">+45 22810419</button></a>
         </div>
     </form>
-        <!-- Footer -->
-        <footer class="text-center text-lg-start bg-light text-muted" style="margin-top: 50px;">
-          <!-- Section: Social media -->
-          <section
-            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-          >
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted" style="margin-top: 50px;">
+        <!-- Section: Social media -->
+        <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
-              <span>Get connected with us on social networks:</span>
+                <span>Get connected with us on social networks:</span>
             </div>
             <!-- Left -->
-        
+
             <!-- Right -->
             <div>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="" class="me-4 text-reset">
-                <i class="fab fa-github"></i>
-              </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
             <!-- Right -->
-          </section>
-          <!-- Section: Social media -->
-        
-          <!-- Section: Links  -->
-          <section class="">
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
             <div class="container text-center text-md-start mt-5">
-              <!-- Grid row -->
-              <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-gem me-3"></i>Campingplads
-                  </h6>
-                  <p>
-                      bla. bla. bla. Campingplads bla. bla. bla. Danmarks bedste bla. bla. bla. POG
-                  </p>
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Campingplads
+                        </h6>
+                        <p>
+                            bla. bla. bla. Campingplads bla. bla. bla. Danmarks bedste bla. bla. bla. POG
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Pladser/Hytter
+                        </h6>
+                        <p>
+                            <a href="../Pladser/NormalHytte.aspx" class="text-reset">Normal Hytte</a>
+                        </p>
+                        <p>
+                            <a href="../Pladser/LuksusHytte.aspx" class="text-reset">Luksus Hytte</a>
+                        </p>
+                        <p>
+                            <a href="../Pladser/LillePlads.aspx" class="text-reset">Lille Plads</a>
+                        </p>
+                        <p>
+                            <a href="../Pladser/StorPlads.aspx" class="text-reset">Stor Plads</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Useful links
+                        </h6>
+                        <p>
+                            <a href="../Priser.aspx" class="text-reset">Priser</a>
+                        </p>
+                        <p>
+                            <a href="../Campingplads.aspx" class="text-reset">Om Campingpladsen</a>
+                        </p>
+                        <p>
+                            <a href="../Pladser.aspx" class="text-reset">Pladser</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>Midt-Jylland, MJ 6830, DK</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            campingplads@campingplads.dk
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i>+45 22 81 04 19</p>
+                    </div>
+                    <!-- Grid column -->
                 </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    Pladser/Hytter
-                  </h6>
-                  <p>
-                    <a href="../Pladser/NormalHytte.aspx" class="text-reset">Normal Hytte</a>
-                  </p>
-                  <p>
-                    <a href="../Pladser/LuksusHytte.aspx" class="text-reset">Luksus Hytte</a>
-                  </p>
-                  <p>
-                    <a href="../Pladser/LillePlads.aspx" class="text-reset">Lille Plads</a>
-                  </p>
-                  <p>
-                    <a href="../Pladser/StorPlads.aspx" class="text-reset">Stor Plads</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    Useful links
-                  </h6>
-                  <p>
-                    <a href="../Priser.aspx" class="text-reset">Priser</a>
-                  </p>
-                  <p>
-                    <a href="../Campingplads.aspx" class="text-reset">Om Campingpladsen</a>
-                  </p>
-                  <p>
-                    <a href="../Pladser.aspx" class="text-reset">Pladser</a>
-                  </p>
-                </div>
-                <!-- Grid column -->
-        
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    Contact
-                  </h6>
-                  <p><i class="fas fa-home me-3"></i> Midt-Jylland, MJ 6830, DK</p>
-                  <p>
-                    <i class="fas fa-envelope me-3"></i>
-                    campingplads@campingplads.dk
-                  </p>
-                  <p><i class="fas fa-phone me-3"></i> +45 22 81 04 19</p>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
+                <!-- Grid row -->
             </div>
-          </section>
-          <!-- Section: Links  -->
-        
-          <!-- Copyright -->
-          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2021 Copyright:
             <a class="text-reset fw-bold" href="">Campingplads.dk</a>
-          </div>
-          <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 </body>
 </html>

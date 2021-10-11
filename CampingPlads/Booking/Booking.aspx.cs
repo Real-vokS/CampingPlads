@@ -11,7 +11,35 @@ namespace CampingPlads.Booking
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (EndDateTextBox.Text == "")
+            {
+                EndDateTextBox.Text = DateTime.Now.ToString();
+            }
+        }
+
+        protected void StartDate_SelectionChanged(object sender, EventArgs e)
+        {
+
+            string startDate;
+
+            startDate = StartDate.SelectedDate.ToShortDateString();
+        }
+
+        protected void EndDate_SelectionChanged(object sender, EventArgs e)
+        {
+            string endDate;
+
+            endDate = StartDate.SelectedDate.ToShortDateString();
+            
+            EndDateTextBox.Text = endDate;
+
+
 
         }
+
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+        }
+
     }
 }
