@@ -43,13 +43,8 @@
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
 
-        <!-- Call Button -->
-        <div class="fixed-bottom call">
-            <a href="tel:+45 22810419">
-                <button type="button" class="btn btn-success btn-lg btn-rounded">+45 22810419</button></a>
+            </asp:ContentPlaceHolder>
         </div>
     </form>
 

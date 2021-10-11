@@ -11,38 +11,18 @@ namespace CampingPlads.Booking
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (EndDateTextBox.Text == "")
-            {
-                EndDateTextBox.Text = DateTime.Now.ToShortDateString();
-            }
-            else
-            {
-            }
         }
 
-        protected void StartDate_SelectionChanged(object sender, EventArgs e)
+        protected void Submit_Click(object sender, EventArgs e)
         {
-
-            string startDate;
-
-            startDate = StartDate.SelectedDate.ToShortDateString();
-        }
-
-        protected void EndDate_SelectionChanged(object sender, EventArgs e)
-        {
-            string endDate;
-
-            endDate = StartDate.SelectedDate.ToShortDateString();
-            
-            EndDateTextBox.Text = endDate;
-
+            string fornavn = inputFirstName.ToString();
+            string efternavn = inputLastName.ToString();
+            string email = inputLastName.ToString();
+            string tlf = inputPhoneNumber.ToString();
+            string bynavn = inputCity.ToString();
+            string vejnavn = inputAddress.ToString();
 
 
         }
-
-        protected void SubmitButton_Click(object sender, EventArgs e)
-        {
-        }
-
     }
 }

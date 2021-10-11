@@ -35,9 +35,8 @@
     background-color:transparent !important;
     border:none !important;
 }
-#StartDate{
-    float:none;
-    margin: auto;
+#booking .col-4{
+    margin:auto;
 }
 
 

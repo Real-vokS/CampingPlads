@@ -15,39 +15,66 @@ namespace CampingPlads.Booking
     {
 
         /// <summary>
-        /// StartDate control.
+        /// inputFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar StartDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputFirstName;
 
         /// <summary>
-        /// EndDate control.
+        /// inputLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar EndDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputLastName;
 
         /// <summary>
-        /// EndDateTextBox control.
+        /// inputEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EndDateTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inputEmail;
 
         /// <summary>
-        /// SubmitButton control.
+        /// inputPhoneNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubmitButton;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputPhoneNumber;
+
+        /// <summary>
+        /// inputAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputAddress;
+
+        /// <summary>
+        /// inputCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputCity;
+
+        /// <summary>
+        /// Submit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Submit;
     }
 }
