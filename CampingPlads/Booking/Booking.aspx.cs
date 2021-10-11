@@ -13,7 +13,10 @@ namespace CampingPlads.Booking
         {
             if (EndDateTextBox.Text == "")
             {
-                EndDateTextBox.Text = DateTime.Now.ToString();
+                EndDateTextBox.Text = DateTime.Now.ToShortDateString();
+            }
+            else
+            {
             }
         }
 
