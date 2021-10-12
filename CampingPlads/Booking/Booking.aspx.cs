@@ -15,13 +15,14 @@ namespace CampingPlads.Booking
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            string fornavn = inputFirstName.ToString();
-            string efternavn = inputLastName.ToString();
-            string email = inputLastName.ToString();
-            string tlf = inputPhoneNumber.ToString();
-            string bynavn = inputCity.ToString();
-            string vejnavn = inputAddress.ToString();
+            string fornavn = inputFirstName.Value;
+            string efternavn = inputLastName.Value;
+            string email = inputLastName.Value;
+            string tlf = inputPhoneNumber.Value;
+            string bynavn = inputCity.Value;
+            string vejnavn = inputAddress.Value;
 
+            Response.Redirect("/Booking/ChooseDate.aspx");
 
         }
     }
