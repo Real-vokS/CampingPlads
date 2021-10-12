@@ -35,8 +35,10 @@
     background-color:transparent !important;
     border:none !important;
 }
-#booking .col-4{
-    margin:auto;
+
+.calendar{
+    width:20%;
+    margin-left: 10%;
 }
 
 
