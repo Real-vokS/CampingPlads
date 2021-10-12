@@ -18,7 +18,7 @@ namespace CampingPlads.Booking
             }
             if (EndDateTextBox.Text == "")
             {
-                EndDateTextBox.Text = DateTime.Now.ToShortDateString();
+                EndDateTextBox.Text = DateTime.Now.AddDays(1).ToShortDateString();
             }
 
         }
@@ -28,7 +28,7 @@ namespace CampingPlads.Booking
             StartDateTextBox.Text = StartDate.SelectedDate.ToShortDateString();
 
 
-            if (StartDate.SelectedDate > EndDate.SelectedDate)
+            if (StartDate.SelectedDate >= EndDate.SelectedDate)
             {
                 EndDate.SelectedDate = StartDate.SelectedDate.AddDays(+1);
                 EndDateTextBox.Text = EndDate.SelectedDate.ToShortDateString();
@@ -62,7 +62,15 @@ namespace CampingPlads.Booking
         protected void EndDate_DayRender(object sender, DayRenderEventArgs e)
         {
 
-            if (e.Day.Date < StartDate.SelectedDate)
+            if (e.Day.Date < DateTime.Now)
+            {
+
+                e.Cell.BackColor = ColorTranslator.FromHtml("#a9a9a9");
+
+                e.Day.IsSelectable = false;
+            }
+
+            if (e.Day.Date <= StartDate.SelectedDate)
             {
                 e.Cell.BackColor = ColorTranslator.FromHtml("#a9a9a9");
 
