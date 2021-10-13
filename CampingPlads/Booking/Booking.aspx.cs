@@ -105,8 +105,7 @@ namespace CampingPlads.Booking
                 e.Day.IsSelectable = false;
             }
         }
-
-        protected void DropDown_SelectedIndexChanged(object sender, EventArgs e)
+            protected void DropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (DropDown.SelectedIndex)
             {

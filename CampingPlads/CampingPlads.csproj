@@ -182,6 +182,7 @@
     <Content Include="Pladser\NormalHytte.aspx" />
     <Content Include="Pladser\StorPlads.aspx" />
     <Content Include="Priser.aspx" />
+    <Content Include="Scripts\bootstrap-input-spinner.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />

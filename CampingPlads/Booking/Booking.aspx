@@ -36,7 +36,7 @@
         <ContentTemplate>
 
 
-            <div class="d-flex justify-content-center" style="margin-top: 10px;">
+            <div class="d-flex justify-content-center" style="margin-top: 20px;">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
                     Vis kort over pladser
                 </button>
@@ -99,10 +99,67 @@
 
                                 <div>
                                     <asp:Label Text="Vælg din plads: " runat="server" />
-                                    <asp:DropDownList ID="PladsDropDownList" runat="server" AutoPostBack="True"></asp:DropDownList>
+                                    <asp:DropDownList ID="PladsDropDownList" runat="server" OnSelectedIndexChanged="PladsDropDown_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <asp:Label Text="Adgang til badeland barn Pr. dag: " runat="server" />
+                                <input type="number" value="0" min="0" max="10" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <asp:Label Text="Adgang til badeland voksen Pr. dag: " runat="server" />
+                                <input type="number" value="0" min="0" max="10" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <asp:Label Text="Cykel leje Pr. dag: " runat="server" />
+                                <input type="number" value="0" min="0" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <asp:Label Text="Kano leje Pr. dag: " runat="server" />
+                                <input type="number" value="0" min="0" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <asp:Label Text="Kajak leje Pr. dag: " runat="server" />
+                                <input type="number" value="0" min="0" />
+                            </div>
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <asp:Label Text="Sengelinned Pr. Ophold: " runat="server" />
+                                <input type="number" value="0" min="0" />
+                            </div>
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <asp:Label Text="Slut Rengøring: " runat="server" />
+                                <asp:CheckBox ID="CleaningCheckBox" runat="server" />
+                            </div>
+                        </div>
+
+                        <!-- Script til numeric up down -->
+                        <script src="/Scripts/bootstrap-input-spinner.js"></script>
+                        <script>
+                            $("input[type='number']").inputSpinner()
+                        </script>
 
                         <!-- Submit button -->
                         <div class="form-row" style="margin-top: 25px;">
