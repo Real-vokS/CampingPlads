@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Booking\Booking.aspx" />
-    <Content Include="Booking\ChooseDate.aspx" />
     <Content Include="Campingpladsen.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -89,6 +88,7 @@
     <Content Include="Images\Campingpladsen.jpg" />
     <Content Include="Images\header-img.jpg" />
     <Content Include="Images\Hytte.jpg" />
+    <Content Include="Images\Kort.png" />
     <Content Include="Images\Plads.jpg" />
     <Content Include="Images\Priser.PNG" />
     <Content Include="Index.aspx" />
@@ -198,13 +198,6 @@
     </Compile>
     <Compile Include="Booking\Booking.aspx.designer.cs">
       <DependentUpon>Booking.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Booking\ChooseDate.aspx.cs">
-      <DependentUpon>ChooseDate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Booking\ChooseDate.aspx.designer.cs">
-      <DependentUpon>ChooseDate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Campingpladsen.aspx.cs">
       <DependentUpon>Campingpladsen.aspx</DependentUpon>
