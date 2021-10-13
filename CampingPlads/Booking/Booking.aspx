@@ -99,7 +99,7 @@
 
                                 <div>
                                     <asp:Label Text="Vælg din plads: " runat="server" />
-                                    <asp:DropDownList ID="PladsDropDownList" runat="server" OnSelectedIndexChanged="PladsDropDown_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
+                                    <asp:DropDownList ID="PladsDropDownList" runat="server" AutoPostBack="True"></asp:DropDownList>
                                 </div>
                             </div>
                         </div>
