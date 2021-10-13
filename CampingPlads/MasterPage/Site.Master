@@ -107,16 +107,16 @@
                         <h6 class="text-uppercase fw-bold mb-4">Pladser/Hytter
                         </h6>
                         <p>
-                            <a href="../Pladser/NormalHytte.aspx" class="text-reset">Normal Hytte</a>
+                            <a href="/Pladser/NormalHytte.aspx" class="text-reset">Normal Hytte</a>
                         </p>
                         <p>
-                            <a href="../Pladser/LuksusHytte.aspx" class="text-reset">Luksus Hytte</a>
+                            <a href="/Pladser/LuksusHytte.aspx" class="text-reset">Luksus Hytte</a>
                         </p>
                         <p>
-                            <a href="../Pladser/LillePlads.aspx" class="text-reset">Lille Plads</a>
+                            <a href="/Pladser/LillePlads.aspx" class="text-reset">Lille Plads</a>
                         </p>
                         <p>
-                            <a href="../Pladser/StorPlads.aspx" class="text-reset">Stor Plads</a>
+                            <a href="/Pladser/StorPlads.aspx" class="text-reset">Stor Plads</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -124,16 +124,20 @@
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Useful links
+                        <h6 class="text-uppercase fw-bold mb-4">Links
                         </h6>
                         <p>
-                            <a href="../Priser.aspx" class="text-reset">Priser</a>
+                            <a href="/Index.aspx" class="text-reset">Hjem</a>
+                        </p>
+
+                        <p>
+                            <a href="/Priser.aspx" class="text-reset">Priser</a>
                         </p>
                         <p>
-                            <a href="../Campingplads.aspx" class="text-reset">Om Campingpladsen</a>
+                            <a href="/Campingplads.aspx" class="text-reset">Om Campingpladsen</a>
                         </p>
                         <p>
-                            <a href="../Pladser.aspx" class="text-reset">Pladser</a>
+                            <a href="/Pladser.aspx" class="text-reset">Pladser</a>
                         </p>
                     </div>
                     <!-- Grid column -->
