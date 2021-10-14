@@ -78,6 +78,15 @@ namespace CampingPlads.Booking
         protected global::System.Web.UI.WebControls.DropDownList DropDown;
 
         /// <summary>
+        /// Test control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Test;
+
+        /// <summary>
         /// PladsDropDownList control.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,114 @@ namespace CampingPlads.Booking
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList PladsDropDownList;
+
+        /// <summary>
+        /// BadelandBarn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BadelandBarn;
+
+        /// <summary>
+        /// BadelandBarnLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label BadelandBarnLabel;
+
+        /// <summary>
+        /// BadelandVoksen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox BadelandVoksen;
+
+        /// <summary>
+        /// BadelandVoksenLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label BadelandVoksenLabel;
+
+        /// <summary>
+        /// CykelLeje control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CykelLeje;
+
+        /// <summary>
+        /// CykelLejeLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CykelLejeLabel;
+
+        /// <summary>
+        /// KanoLeje control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox KanoLeje;
+
+        /// <summary>
+        /// KanoLejeLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label KanoLejeLabel;
+
+        /// <summary>
+        /// KajakLeje control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox KajakLeje;
+
+        /// <summary>
+        /// KajakLejeLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label KajakLejeLabel;
+
+        /// <summary>
+        /// SengelinnedLeje control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox SengelinnedLeje;
+
+        /// <summary>
+        /// SengelinnedLejeLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label SengelinnedLejeLabel;
 
         /// <summary>
         /// CleaningCheckBox control.
@@ -96,6 +213,15 @@ namespace CampingPlads.Booking
         protected global::System.Web.UI.WebControls.CheckBox CleaningCheckBox;
 
         /// <summary>
+        /// CleaningLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CleaningLabel;
+
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>
@@ -103,6 +229,33 @@ namespace CampingPlads.Booking
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// TakKunde control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label TakKunde;
+
+        /// <summary>
+        /// Bestilt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Bestilt;
+
+        /// <summary>
+        /// CloseModal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CloseModal;
 
         /// <summary>
         /// inputFirstName control.
@@ -129,7 +282,7 @@ namespace CampingPlads.Booking
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inputEmail;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputEmail;
 
         /// <summary>
         /// inputPhoneNumber control.

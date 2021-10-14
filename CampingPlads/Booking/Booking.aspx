@@ -26,6 +26,18 @@
 
     <!-- MDB Script -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+    <script type="text/javascript">
+        function showModal() {
+            $("#Modal").modal('show');
+        }
+
+        $(function () {
+            $("#Button1").click(function () {
+                showModal();
+            });
+        });
+    </script>
 </asp:Content>
 
 
@@ -41,6 +53,7 @@
                     Vis kort over pladser
                 </button>
 
+
                 <!-- Modal -->
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -54,6 +67,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
+
                         <!-- StartDate Calendar and Textbox -->
                         <div class="form-row" style="margin-top: 5%;">
                             <div class="form-group" style="margin-top: 2%;">
@@ -87,84 +101,118 @@
                             </div>
                         </div>
 
+                        <!-- Plads valg -->
                         <div class="form-row" style="width: 42%; margin-top: 25px;">
                             <div class="form-group">
+                                <!-- Plads type valg -->
                                 <asp:Label Text="Vælg En Plads Type: " runat="server" />
                                 <asp:DropDownList ID="DropDown" runat="server" OnSelectedIndexChanged="DropDown_SelectedIndexChanged" AutoPostBack="True">
-                                    <asp:ListItem>Lille Plads</asp:ListItem>
+                                    <asp:ListItem Value="Lille Plads">Lille Plads</asp:ListItem>
                                     <asp:ListItem>Stor Plads</asp:ListItem>
                                     <asp:ListItem>Normal Hytte</asp:ListItem>
                                     <asp:ListItem>Luksus Hytte</asp:ListItem>
                                 </asp:DropDownList>
 
+                                <!--plads valg -->
                                 <div>
-                                    <asp:Label Text="Vælg din plads: " runat="server" />
+                                    <asp:Label ID="Test" Text="Vælg din plads: " runat="server" />
                                     <asp:DropDownList ID="PladsDropDownList" runat="server" AutoPostBack="True"></asp:DropDownList>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Badeland barn -->
                         <div class="form-row">
-                            <div class="form-group col-4">
+                            <div class="form-group col-3">
                                 <asp:Label Text="Adgang til badeland barn Pr. dag: " runat="server" />
-                                <input type="number" value="0" min="0" max="10" />
+                                <br />
+                                <asp:TextBox type="number" ID="BadelandBarn" runat="server" value="0" min="0" Style="width: 50px;" OnTextChanged="badelandBarn_TextChanged" AutoPostBack="True" />
+                                <asp:Label Text="Pris: 0 kr. " ID="BadelandBarnLabel" runat="server" />
                             </div>
                         </div>
 
+                        <!-- Badeland voksen -->
                         <div class="form-row">
-                            <div class="form-group col-4">
+                            <div class="form-group col-3">
                                 <asp:Label Text="Adgang til badeland voksen Pr. dag: " runat="server" />
-                                <input type="number" value="0" min="0" max="10" />
+                                <asp:TextBox type="number" ID="BadelandVoksen" runat="server" value="0" min="0" Style="width: 50px;" OnTextChanged="badelandVoksen_TextChanged" AutoPostBack="True" />
+                                <asp:Label Text="Pris: 0 kr. " ID="BadelandVoksenLabel" runat="server" />
                             </div>
                         </div>
 
+                        <!-- Cykel leje -->
+                        <div class="form-row">
+                            <div class="form-group col-3">
+                                <asp:Label Text="Cykel leje antal dage: " runat="server" />
+                                <asp:TextBox type="number" ID="CykelLeje" runat="server" value="0" min="0" Style="width: 50px;" OnTextChanged="cykelLeje_TextChanged" AutoPostBack="True" />
+                                <asp:Label Text="Pris: 0 kr. " ID="CykelLejeLabel" runat="server" />
+                            </div>
+                        </div>
+
+                        <!-- Kano leje -->
+                        <div class="form-row">
+                            <div class="form-group col-3">
+                                <asp:Label Text="Kano leje antal dage: " runat="server" />
+                                <asp:TextBox type="number" ID="KanoLeje" runat="server" value="0" min="0" Style="width: 50px;" OnTextChanged="kanoLeje_TextChanged" AutoPostBack="True" />
+                                <asp:Label Text="Pris: 0 kr. " ID="KanoLejeLabel" runat="server" />
+                            </div>
+                        </div>
+
+                        <!-- Kajak leje -->
+                        <div class="form-row">
+                            <div class="form-group col-3">
+                                <asp:Label Text="Kajak leje antal dage: " runat="server" />
+                                <asp:TextBox type="number" ID="KajakLeje" runat="server" value="0" min="0" Style="width: 50px;" OnTextChanged="kajakLeje_TextChanged" AutoPostBack="True" />
+                                <asp:Label Text="Pris: 0 kr. " ID="KajakLejeLabel" runat="server" />
+                            </div>
+                        </div>
+
+                        <!-- Sengelinned leje -->
+                        <div class="form-row">
+                            <div class="form-group col-3">
+                                <asp:Label Text="Antal sengelinned Pr. Ophold: " runat="server" />
+                                <br />
+                                <asp:TextBox type="number" ID="SengelinnedLeje" runat="server" value="0" min="0" Style="width: 50px;" OnTextChanged="sengelinnedLeje_TextChanged" AutoPostBack="True" />
+                                <asp:Label Text="Pris: 0 kr. " ID="SengelinnedLejeLabel" runat="server" />
+                            </div>
+                        </div>
+
+                        <!-- Slut rengøring checkbox -->
                         <div class="form-row">
                             <div class="form-group col-4">
-                                <asp:Label Text="Cykel leje Pr. dag: " runat="server" />
-                                <input type="number" value="0" min="0" />
+                                <asp:Label Text="Slut rengøring: " runat="server" />
+                                <asp:CheckBox ID="CleaningCheckBox" runat="server" AutoPostBack="True" OnCheckedChanged="CleaningCheckBox_CheckedChanged" />
+                                <asp:Label Text="Pris: 0 kr. " ID="CleaningLabel" runat="server" />
                             </div>
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group col-4">
-                                <asp:Label Text="Kano leje Pr. dag: " runat="server" />
-                                <input type="number" value="0" min="0" />
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group col-4">
-                                <asp:Label Text="Kajak leje Pr. dag: " runat="server" />
-                                <input type="number" value="0" min="0" />
-                            </div>
-                        </div>
-
-
-                        <div class="form-row">
-                            <div class="form-group col-4">
-                                <asp:Label Text="Sengelinned Pr. Ophold: " runat="server" />
-                                <input type="number" value="0" min="0" />
-                            </div>
-                        </div>
-
-
-                        <div class="form-row">
-                            <div class="form-group col-4">
-                                <asp:Label Text="Slut Rengøring: " runat="server" />
-                                <asp:CheckBox ID="CleaningCheckBox" runat="server" />
-                            </div>
-                        </div>
-
-                        <!-- Script til numeric up down -->
-                        <script src="/Scripts/bootstrap-input-spinner.js"></script>
-                        <script>
-                            $("input[type='number']").inputSpinner()
-                        </script>
 
                         <!-- Submit button -->
                         <div class="form-row" style="margin-top: 25px;">
                             <div class="form-group">
-                                <asp:Button ID="Button1" runat="server" Text="Gå til tilbehør" CssClass="btn btn-primary" OnClick="Submit_Click" />
+                                <asp:Button ID="Button1" runat="server" Text="Resever plads" CssClass="btn btn-primary" OnClick="Submit_Click" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="Reservation" id="exampleModalLabel">Reservation</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <asp:Label ID="TakKunde" Text="" runat="server" />
+                                    <br />
+                                    <asp:Label ID="Bestilt" Text="" runat="server" />
+                                </div>
+                                <div class="modal-footer">
+                                    <asp:Button ID="CloseModal" runat="server" Text="Close" CssClass="btn btn-secondary" OnClick="Close_Click" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,31 +222,31 @@
                         <!-- First Name And Last Name -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="inputFirstName">First Name</label>
-                                <input type="text" runat="server" id="inputFirstName" class="form-control" placeholder="First name">
+                                <label for="inputFirstName">Fornavn</label>
+                                <input type="text" runat="server" id="inputFirstName" class="form-control" placeholder="Fornavn">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="inputLastName">Last Name</label>
-                                <input type="text" runat="server" id="inputLastName" class="form-control" placeholder="Last name">
+                                <label for="inputLastName">Efternavn</label>
+                                <input type="text" runat="server" id="inputLastName" class="form-control" placeholder="Efternavn">
                             </div>
                         </div>
 
                         <!-- Email And Phone Number -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="inputEmail4">Email</label>
-                                <input type="email" runat="server" class="form-control" id="inputEmail" placeholder="Email">
+                                <label for="inputEmail">Email</label>
+                                <input type="text" runat="server" class="form-control" id="inputEmail" placeholder="Email">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="inputNumber">Phone Number</label>
-                                <input type="text" runat="server" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+                                <label for="inputNumber">Tlf. Nr.</label>
+                                <input type="text" runat="server" class="form-control" id="inputPhoneNumber" placeholder="Tlf. Nr.">
                             </div>
                         </div>
 
                         <!-- Address -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="inputAddress">Address</label>
+                                <label for="inputAddress">Adresse</label>
                                 <input type="text" runat="server" class="form-control" id="inputAddress" placeholder="1234 Main St">
                             </div>
                         </div>
@@ -206,7 +254,7 @@
                         <!-- city -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="inputCity">City</label>
+                                <label for="inputCity">By</label>
                                 <input type="text" runat="server" class="form-control" id="inputCity">
                             </div>
                         </div>
@@ -215,6 +263,7 @@
             </div>
         </ContentTemplate>
     </asp:UpdatePanel>
+
 
 
 

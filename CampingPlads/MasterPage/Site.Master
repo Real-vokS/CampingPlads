@@ -107,16 +107,16 @@
                         <h6 class="text-uppercase fw-bold mb-4">Pladser/Hytter
                         </h6>
                         <p>
-                            <a href="/Pladser/NormalHytte.aspx" class="text-reset">Normal Hytte</a>
+                            <a href="/Pladser.aspx" class="text-reset">Normal Hytte</a>
                         </p>
                         <p>
-                            <a href="/Pladser/LuksusHytte.aspx" class="text-reset">Luksus Hytte</a>
+                            <a href="/Pladser.aspx" class="text-reset">Luksus Hytte</a>
                         </p>
                         <p>
-                            <a href="/Pladser/LillePlads.aspx" class="text-reset">Lille Plads</a>
+                            <a href="/Pladser.aspx" class="text-reset">Lille Plads</a>
                         </p>
                         <p>
-                            <a href="/Pladser/StorPlads.aspx" class="text-reset">Stor Plads</a>
+                            <a href="/Pladser.aspx" class="text-reset">Stor Plads</a>
                         </p>
                     </div>
                     <!-- Grid column -->
